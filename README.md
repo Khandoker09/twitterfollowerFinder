@@ -9,5 +9,6 @@ detail information about opening a twitter developer accounts can be found in th
 ### Advanages
 - Can scrape user's followers informations.
 - Can scrapes followers profile location and descriptions 
+- Output of this scripts will be saved in .csv file with current dates 
 ### Disadvanteages 
 - Issue with rate limits (need to fixed )
