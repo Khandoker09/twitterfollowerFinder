@@ -24,7 +24,7 @@ auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 # Creation of query for finding the followers . parameter = screen_nmae
-followers = tweepy.Cursor(api.get_followers, screen_name="airtablestatus").items()  
+followers = tweepy.Cursor(api.get_followers, screen_name="airtablestatus").items(200)  
 
 # Pulling information from tweets iterable object
 try:
@@ -41,3 +41,4 @@ followers_list_df.columns = ['username','user_screenname','userid','userslocatio
 filename = str('twitter_followers_list_')+str(current_date.year)+str('_')+str(current_date.month)+str('_')+str(current_date.day)
 print(followers_list_df)
 followers_list_df.to_csv(str(filename + '.csv'),index=False)
+#followers_list_df.to_excel(str(filename + '.csv'),index=False)
