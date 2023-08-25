@@ -14,10 +14,10 @@ import datetime
 # for creating the file name
 current_date = datetime.datetime.now()
 #all the api keys from the developer accounts 
-consumer_key = "IL16kNKNhp7aOgDobPGcmpQrt"
-consumer_secret = "gOevdNkCMDVYMZPf04K8NBHwPewyTWXdh3VZcyMKL9EpDd61NF"
-access_key = "1316280381570772997-SYLFOS1m5zjevhWeDFbvCRiOh1fJqd"
-access_secret = "09w7OyTSt7MolBO2U5HbXQOb66SVyGOaTTSvFziIYLH33"
+consumer_key = "api"
+consumer_secret = "api"
+access_key ="api"
+access_secret = "api"
 # Pass your twitter credentials to tweepy via its OAuthHandler
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
